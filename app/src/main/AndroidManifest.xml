@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParkingApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ConfirmacionReserva"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdmVehiculos"
+            android:exported="false" />
+        <activity
+            android:name=".ResultadoEstimacion2"
+            android:exported="false" />
+        <activity
+            android:name=".Estimacion2"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".InfoAutoridad"
+            android:exported="false" />
+        <activity
+            android:name=".InfoReserva2"
+            android:exported="false" />
+        <activity
+            android:name=".Estimacion"
+            android:exported="false" />
+        <activity
+            android:name=".Lot2"
+            android:exported="false" />
+        <activity
+            android:name=".ParqueoDocentesB"
+            android:exported="false" />
+        <activity
+            android:name=".InfoReserva"
+            android:exported="false" />
+        <activity
+            android:name=".InfoConductor"
+            android:exported="false" />
+        <activity
+            android:name=".ParqueosDocentesA"
+            android:exported="true" />
+        <activity
+            android:name=".Autoridades"
+            android:exported="true" />
+        <activity
+            android:name=".Docentes"
+            android:exported="true" />
+        <activity
+            android:name=".EstimationResult"
+            android:exported="true" />
+        <activity
+            android:name=".ParkingSpaceDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Lot"
+            android:exported="true" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainMapActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main_map" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true"
+            />
+    </application>
+
+</manifest>
